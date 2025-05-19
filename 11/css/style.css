@@ -1,0 +1,555 @@
+body {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(03.jpg);
+    background-size: 1920px 1080px;
+    height: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+/*изменение цвета ТЭК-СИСТЕМС при наведении и при нажатии, при котором происходит обновление страницы*/
+h1 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 a:hover {
+  color: rgba(153, 4, 4); 
+}
+/* Цвет ссылки */
+p a {
+    color: #b3ff00; 
+    text-decoration: none; 
+  }
+  
+
+header {
+    background-color: #ffffffc2;
+    color: rgb(0, 0, 0);
+    padding: px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 10px rgb(153, 4, 4);
+    border: 2px solid #6e0909;
+    border-radius: 8px;
+}
+header .header-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+header .logo {
+  display: inline-block;
+  pointer-events: none; /* Игнорировать события мыши */
+}
+header .logo img:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+   text-decoration: underline;
+   color: #7a1717;
+}
+main {
+    padding: 20px;
+}
+main .main-container {
+  display: flex;
+   justify-content: space-between;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+ }
+
+ footer a:hover {
+    text-decoration: underline;
+    color: #ffed8a;
+ }
+
+ .catalog-aside h2{
+    color: #f8d50d;
+    /* -webkit-text-stroke: 1px rgba(0, 0, 0, 0.733); */
+ }
+ 
+ .catalog-aside {
+    flex: 0 0 25%;
+    height: 550px;
+    box-shadow: 0 4px 10px rgb(219, 243, 4);
+    border: 2px solid #f3ff4e; 
+    border-radius: 5px; 
+    padding: 10px;
+    box-sizing: border-box; 
+    background-color: #7c0f0f9c;
+}
+ .about-article {
+    flex: 0 0 70%;
+    padding: 0 20px;
+    color: #fefefe;
+}
+
+ .order-aside {
+    flex: 0 0 100%;
+    text-align: center;
+    margin-top: 20px;
+ }
+  .bottom-container {
+   display: flex;
+   flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+ }
+ .bottom-container > * {
+   margin-bottom: 20px;
+ }
+
+ /*цвет слов*/
+ .keyword {
+    color: rgba(255, 253, 138, 0.822); 
+    font-weight: bold; /* (Опционально) Можно сделать текст полужирным */
+}
+
+
+ .product-list {
+  list-style-type: none;
+  padding: 0;
+  }
+ 
+ .product-list li a{
+    display: block;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #ffffffc2;
+    color: #000000;
+    text-decoration: none;
+    border: 1px solid #151816;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease, background-color 0.3s ease; 
+ }
+  .product-list li a:hover{
+    background-color: #e4fd00;
+    transform: translateY(-5px);
+  }
+ .order-button {
+    background-color: #ffffffc2;
+    color: #000000;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgb(153, 4, 4);
+    border: 2px solid #6e0909;
+ }
+ .order-button:hover {
+    background-color:#7a7159 ;
+    transform: scale(1.05);
+ }
+ /*slider*/
+ .slider-container {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 80%;
+    max-height: 300px;
+ }
+ 
+ .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Анимация слайдера*/
+ }
+ .slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+ }
+ .slide img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 300px;
+ }
+  .contacts-section, .advantages-section {
+    flex: 0 0 48%;
+ }
+
+ .photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    width: calc(33.333% - 30px); /* 3 колонки */
+    margin: 10px; /* Расстояние между блоками */
+}
+
+.photo-item img {
+    width: 100%;
+    border-radius: 8px; /* Закругление углов */
+    transition: transform 0.3s;
+}
+
+.photo-item:hover img {
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.photo-item::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px; /* Закругление рамки */
+    pointer-events: none; /* Игнорировать события мыши */
+}
+
+#delivery {
+    background-color: #7c0f0f9c; /* Цвет фона */
+    box-shadow: 0 4px 10px rgb(219, 243, 4);
+    border: 2px solid #f3ff4e;
+    padding: 20px; /* Отступы от текста до рамки */
+    border-radius: 2px; /* Скругление углов рамки */
+    margin: 20px; /* Отступы от внешних элементов */
+    text-align: justify;
+    color: #ffffff;
+}
+li i {
+    margin-right: 5px;   
+    color: #000000;       /* Цвет иконок знака вопроса */
+}
+  
+.about-article h2{
+    color: #f1ff2b;
+    text-align: center;
+}
+
+.about-article h1{
+    color: #fffffffa;
+    text-align: justify;
+    font-size: 15px;
+}
+
+#about-section {
+    background-color: #7c0f0f9c; /* Цвет фона */
+    box-shadow: 0 4px 10px rgb(219, 243, 4);
+    border: 2px solid #f3ff4e;
+    padding: 20px; /* Отступы от текста до рамки */
+    border-radius: 10px; /* Скругление углов рамки */
+    margin: 0px; /* Отступы от внешних элементов */
+    text-align: justify;
+}
+
+#advantages-section {
+    background-color: #7c0f0f9c;
+    box-shadow: 0 4px 10px rgb(219, 243, 4);
+    border: 2px solid #f3ff4e;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-align: justify;
+    width: 100%;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+#advantages-section ul li {
+    display: flex; /* Располагаем иконку и текст в одну строку */
+    align-items: center; /* Выравниваем их по вертикали */
+    margin-bottom: 5px; /* Отступ между пунктами списка */
+  }
+  
+#advantages-section ul li i {
+    margin-right: 8px; /* Отступ между иконкой и текстом */
+    color: rgb(255, 252, 97); /* Пример: зеленый цвет для иконок */
+    font-size: 1.2em; /* Пример: немного увеличиваем размер иконки */
+}
+
+#contact-section {
+    background-color:  #7c0f0f9c;
+    box-shadow: 0 4px 10px rgb(219, 243, 4);
+    border: 2px solid #f3ff4e;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto; /* Отступы сверху и снизу + центрирование */
+    text-align: justify;
+    max-width: 800px; /* Задаем максимальную ширину */
+    width: 100%; /* Задаем ширину */
+    display: flex; /* Делаем контейнер flex-контейнером */
+    flex-direction: column; /* Устанавливаем вертикальное расположение элементов */
+    align-items: center ; /* Центрируем элементы по горизонтали*/
+    color: #ffffff;
+}
+p i {
+    margin-right: 5px;      /* Отступ между иконкой и текстом */
+    color: #fcf054;            /* Цвет иконок */
+}
+
+.contact-aside {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.contact-info {
+    flex: 1; /* Занимает доступное пространство слева */
+}
+
+/*карта*/
+.map-and-image {
+    display: flex;
+    flex-direction: row; /* Расположение в строку */
+    justify-content: flex-start;  /*  Выравниваем слева (карта слева, фото справа) */
+    align-items: center; /* выравниваем элементы по вертикали */
+}
+
+.map-and-image img {
+    max-width: 1000px;
+    height: auto;
+    margin-left: 30px; /* Небольшой отступ между картой и изображением */
+}
+
+.search-container {
+    display: flex; /* Используем flexbox для расположения элементов в ряд */
+    align-items: center; /* Выравниваем элементы по вертикали */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    margin: 0 auto; /* Центрируем контейнер по горизонтали */
+    width: fit-content; /* Чтобы контейнер не занимал всю ширину */
+  }
+  
+/*оформление поиска*/
+  #searchInput {
+    width: 700px; /* Задаём ширину поля ввода */
+    height: 15px;
+    padding: 8px 12px; 
+    border: 1px solid #3700ff; 
+    border-radius: 4px;
+    font-size: 14px; 
+    margin-right: 5px; 
+  }
+  
+  #searchButton {
+    background-color: #3639ff; /* Задаём цвет фона кнопки */
+    color: white; 
+    padding: 8px 12px; 
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer; 
+    font-size: 14px; 
+}
+  
+  #searchButton:hover {
+    background-color: #43443d; /* Меняем цвет фона при наведении */
+}
+
+/*оформление как сделать заказ */
+.modal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed; 
+    z-index: 1; /* Поверх всех элементов */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включаем прокрутку, если контент не помещается */
+    background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный фон */
+}
+ 
+
+.modal-content {
+    background-color: #7c0f0f9c;
+    margin: 15% auto; /* Центрируем по вертикали и горизонтали */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Ширина контента */
+    max-width: 600px; /* Максимальная ширина */
+    color: #fff702;
+}
+      
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.order-instructions {
+    padding: 15px;
+    border: 1px solid #a30f0f;
+    border-radius: 8px;
+    background-color: #200505;
+  }
+  
+  .order-instructions h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #a70000;
+  }
+  
+  .order-steps {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .order-steps li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #d4d4d4;
+    box-shadow: 0 1px 3px rgb(145, 10, 10);
+  }
+  
+  .order-steps i {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #00810b; /* цвет для иконок */
+    width: 20px;
+    text-align: center;
+}
+  
+.order-steps span {
+    font-size: 1em;
+    color: #020101da;
+}
+
+.image-container {
+    text-align: center; /* Центрирование по горизонтали */
+}
+  
+.image-container img {
+    display: block; /* Превращаем inline элемент в блочный */
+    margin: 0 auto; /* Автоматические отступы слева и справа */
+}
+
+#adminLoginModal .modal-content {
+    background-color: #fd00004f;
+    border: 1px solid #f8f8f8; 
+    width: 90%; 
+    max-width: 400px; 
+    margin: 10% auto;  
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#adminLoginModal h3 {
+    color: #cac967; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+#adminLoginModal .form-group {
+    margin-bottom: 15px;
+}
+
+#adminLoginModal label {
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: bold; 
+    color: #fffd72; 
+}
+
+#adminLoginModal input[type="text"],
+#adminLoginModal input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-size: 16px;
+}
+
+#adminLoginModal .btn-primary {
+    background-color: #f80000; 
+    color: #fff; 
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px;
+    width: 100%; 
+    display: block; 
+    margin-top: 15px; 
+    transition: background-color 0.2s ease; 
+}
+
+#adminLoginModal .btn-primary:hover {
+    background-color: #b87373; 
+}
+
+#adminLoginModal .error-message {
+    color: #000000; 
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+#adminLoginModal .success-message {
+    color: #fffb00; 
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+#adminLoginModal .close {
+    color: #fffb02; 
+    float: right;
+    font-size: 24px;  
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease; 
+}
+
+#adminLoginModal .close:hover,
+#adminLoginModal .close:focus {
+    color: #000000; 
+    text-decoration: none;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.7); 
+}

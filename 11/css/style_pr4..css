@@ -1,0 +1,127 @@
+body {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-stretch: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(04.jpg);
+    background-size: 1920px 1080px;
+    height: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+     text-align: center; /* Выравниваем контент по центру*/
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-list li a {
+    display: block;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.product-list li a:hover {
+    background-color: #e9f0f5;
+    transform: translateY(-5px);
+}
+
+.product {
+    background: rgb(185, 185, 184);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 15px auto; /* Выравниваем продукты по центру и задаем отступы */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+     width: 90%; /* Задаем ширину для всех .product элементов */
+    max-width: 1000px; /* Задаем максимальную ширину для .product */
+}
+.product p { /* Добавляем стиль для параграфов внутри .product */
+    text-align: justify;
+}
+
+
+.slider-container {
+  overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+  transition: transform 0.3s ease;
+}
+.slide {
+    flex: 0 0 auto;
+    width: 300px;
+     margin-right: 20px;
+}
+.slide:last-child {
+    margin-right: 0;
+}
+
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+.slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slider-control.prev {
+    left: 10px;
+}
+
+.slider-control.next {
+    right: 10px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_registr.css">
+    <title>ООО ТЭК-СИСТЕМС - Регистрация</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Регистрация</h1>
+        <form id="registrationForm" action="#" method="post">  <!-- Changed id and action -->
+            <div class="form-group">
+                <label for="username"><i class="fas fa-user form-icon"></i> Имя пользователя:</label>
+                <input type="text" id="username" name="username" required>
+                <div class="error-message" id="usernameError"></div>
+            </div>
+    
+            <div class="form-group">
+                <label for="email"><i class="fas fa-envelope form-icon"></i> Email:</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error-message" id="emailError"></div>
+            </div>
+    
+            <div class="form-group">
+                <label for="password"><i class="fas fa-lock form-icon"></i> Пароль:</label>
+                <input type="password" id="password" name="password" required>
+                <div class="error-message" id="passwordError"></div>
+            </div>
+    
+            <div class="form-group">
+                <label for="confirmPassword"><i class="fas fa-lock form-icon"></i> Подтвердите пароль:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <div class="error-message" id="confirmPasswordError"></div>
+            </div>
+    
+            <div class="show-password-group">
+                <input type="checkbox" id="showPassword">
+                <label for="showPassword">Показать пароль</label>
+            </div>
+    
+            <button type="submit">Зарегистрироваться</button>
+            <div class="error-message" id="formError"></div>
+            <div class="success-message" id="successMessage"></div>
+        </form>
+    </div>    
+<script src="js/registr.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="http://tek-systems.ru/online-order">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТЭК-СИСТЕМС - Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="image_1/icon.png" type="image/x-icon">
+    <link rel="icon" href="image_1/icon.png" type="image/png">
+  </head>
+<body>
+    <header>
+        <div class="container header-container">
+          <h1><a href="javascript:location.reload();">"ТЭК-СИСТЕМС"</a></h1>
+            <nav>
+                <ul>
+                  <nav>
+                    <ul>
+                      <nav>
+                        <ul>
+                          <li>
+                            <i class="fas fa-sign-in-alt"></i>
+                            <a href="#" id="adminLoginLink"><i class="fas fa-user"></i></a>
+                        </li>
+                    
+                        <div id="adminLoginModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h3>Авторизация администратора</h3>
+                                <form id="adminLoginForm">
+                                    <div class="form-group">
+                                        <label for="adminUsername"><i class="fas fa-user"></i> Имя пользователя:</label>
+                                        <input type="text" id="adminUsername" name="adminUsername" required>
+                                        <div class="error-message" id="adminUsernameError"></div>
+                                    </div>
+                    
+                                    <div class="form-group">
+                                        <label for="adminPassword"><i class="fas fa-lock"></i> Пароль:</label>
+                                        <input type="password" id="adminPassword" name="adminPassword" required>
+                                        <div class="error-message" id="adminPasswordError"></div>
+                                    </div>
+                    
+                                    <button type="submit" class="btn btn-primary">Войти</button>
+                    
+                                    <div class="error-message" id="adminFormError"></div>
+                                    <div class="success-message" id="adminSuccessMessage"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                  
+                    <li><a href="https://tek-systems.ru/">«ИНВАРД»</a></li> 
+                     <li><a href="#about-section">О компании</a></li>  
+                     <li><a href="#advantages-section">Преимущества</a></li>
+                     <li><a href="#contact-section">Контакты</a></li>
+                     <li><a href="#catalog-section">Каталог продукции</a></li>
+                     <li><a href="#delivery">Доставка</a></li>
+                     <li><a href="order.html">Сделать онлайн-заказ</a></li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                      <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.595 6.428A.5.5 0 0 1 13 11H3.6a.5.5 0 0 1-.491-.592L2.01 4H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 5h8.17l1.313-5H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                    <p>
+                    <li>
+                      <i class="fas fa-question-circle"></i>
+                        <a href="#" id="orderLink" >Как сделать онлайн-заказ</a></p>
+                        <div id="orderModal" class="modal">
+                          <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <h3>Как сделать онлайн-заказ:</h3>
+                            <ul class="order-steps">
+                              <li>
+                                <i class="fas fa-list"></i>
+                                <span>Выберите товары в каталоге.</span>
+                              </li>
+                              <li>
+                                <i class="fas fa-cart-plus"></i>
+                                <span>Добавьте выбранные товары в корзину.</span>
+                              </li>
+                              <li>
+                                <i class="fas fa-file-alt"></i>
+                                <span>Перейдите на страницу оформления заказа.</span>
+                              </li>
+                              <li>
+                                <i class="fas fa-user-edit"></i>
+                                <span>Заполните форму с вашими контактными данными и адресом доставки.</span>
+                              </li>
+                              <li>
+                                <i class="fas fa-credit-card"></i>
+                                <span>Выберите способ оплаты и доставки.</span>
+                              </li>
+                              <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Подтвердите заказ.</span>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                </ul>
+            </nav>
+          </div>
+      </header>
+      
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="image_1/1.jpg" alt="Slide 1"></div>
+            <div class="slide"><img src="image_1/2.jpg" alt="Slide 2"></div>
+            <div class="slide"><img src="image_1/3.jpg" alt="Slide 3"></div>
+            <div class="slide"><img src="image_1/4.jpg" alt="Slide 4"></div>
+            <div class="slide"><img src="image_1/5.jpg" alt="Slide 5"></div>
+            <div class="slide"><img src="image_1/6.jpg" alt="Slide 6"></div>
+            <div class="slide"><img src="image_1/7.jpg" alt="Slide 7"></div>
+            <div class="slide"><img src="image_1/8.jpg" alt="Slide 8"></div>
+        </div>
+     </div>
+      <main>
+         <div class="container main-container">
+              <aside id="catalog-section" class="catalog-aside">
+                  <h2>Каталог продукции:</h2>
+                    <ul class="product-list">
+                        <li><a href="product1.html">Уровнемеры, расходомеры, плотномеры</a></li>
+                        <li><a href="product2.html">Сигнализаторы уровня и потока жидкости</a></li>
+                        <li><a href="product3.html">Указатели уровня жидкости и уровнемерные камеры</a></li>
+                        <li><a href="product4.html">Смотровые фонари для трубопроводов</a></li>
+                        <li><a href="product5.html">Системы защиты и обогрева</a></li>
+                    </ul>
+              </aside>
+            <article id="about-section" class="about-article">
+              <h2>О компании "ТЭК-СИСТЕМС"</h2>
+              <h1> <span class="keyword">Компания ООО «ТЭК-СИСТЕМС» </span> была зарегистрирована 2 апреля 2019 года. </h1>
+              <h1><span class="keyword">Цель деятельности ООО «ТЭК-СИСТЕМС»</span> — производство прочих приборов, датчиков, аппаратуры и инструментов для измерения, контроля и испытаний.
+                <span class="keyword">Основное направление</span> компании специализируется на разработке и производстве приборов контроля уровня и потока жидкостей и газов. </h1>
+                  <div class="image-container">
+                    <img src="image_1/20.png" width="750px" height="400px" />
+                  </div>
+                  <h><span class="keyword">Директором компании "ТЭК-СИСТЕМС" является:</span> Ершов Александр Александрович.</h>
+                  <h1><span class="keyword">Учредители ООО "ТЭК-СИСТЕМС":</span> Малахов Дмитрий Викторович; Каплин Александр Сергеевич; Агеев Александр Анатольевич; Ершов Александр Александрович.</h1>
+                  <h1><span class="keyword">ООО "ТЭК-СИСТЕМС" является</span> эксклюзивным и единственным поставщиком оборудования, производимого компанией "ИНВАРД", в плотном сотрудничестве с которой и была сформирована производственная площадка и разработана поставляемая нами линейка оборудования.</h1>
+                </article>
+        </div>
+
+        <div class="container bottom-container">
+          <article id="advantages-section" class="advantages-article">
+            <h2>Преимущества:</h2>
+            <ul>
+              <li><i class="fas fa-check-circle"></i> Гарантия качества: контроль технологического процесса;</li>
+              <li><i class="fas fa-check-circle"></i> Надежность: не подводят своих клиентов и всегда даем корректную информацию о ходе изготовления продукции;</li>
+              <li><i class="fas fa-check-circle"></i> Условия оплаты: мы готовы обсуждать любые условия оплаты и идти навстречу клиенту;</li>
+              <li><i class="fas fa-truck"></i> Качественная логистика: поставка «под ключ» в любую точку России;</li>
+              <li><i class="fas fa-question-circle"></i> Техническая грамотность: мы ответим на любые вопросы и предложим оптимальные решения;</li>
+              <li><i class="fas fa-clock"></i> Оперативность: ответ на любой запрос в течение суток,</li>
+            </ul>
+          </article>
+
+          <div class="photo-gallery">
+            <div class="photo-item">
+                <img src="image_1/02.jpg" alt="Фото 1">
+            </div>
+            <div class="photo-item">
+                <img src="image_1/01.jpg" alt="Фото 2">
+            </div>
+            <div class="photo-item">
+                <img src="image_1/03.jpg" alt="Фото 3">
+            </div>
+        </div>
+        
+        <aside id="contact-section" class="contact-aside">
+            <div class="contact-info">
+                <h2>Контакты</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Адрес: г. Рязань, Маяковского, 1а</p>
+                <p><i class="fas fa-phone"></i> Телефон: <a href="tel:+74912407325">+7 (4912) 40-73-25</a></p>
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:sales@tek-systems.ru">sales@tek-systems.ru </a></p>
+                <p><i class="fas fa-building"></i> Компания «ИНВАРД»</p>
+            </div>
+            <div class="map-and-image">
+                <div id="map" style="width: 400px; height: 300px;"></div>
+                <img src="09.jpg" alt="Фотография компании" style="width: 300px; height: 500px;">
+            </div>
+        </aside>         
+
+    <footer>
+            <section id="delivery">
+                <h2 >Доставка</h2>
+                    <p>Компанией ТЭК-СИСТЕМС осуществляется организация отгрузки в соответствии с согласованными Заказчиком реквизитами отправки.
+                        Мы сотрудничаем со любыми удобными клиентами транспортными компаниями, к примеру:
+                        <ul>
+                          <p><i class="fas fa-truck"></i> Деловые Линии</p>
+                          <p><i class="fas fa-truck"></i> ТК Кашалот</p>
+                          <p><i class="fas fa-truck"></i> DPD</p>
+                      </ul>
+                       <p> В зависимости от требований клиента доставка может быть осуществлена как автомобильными грузоперевозками, так и авиафрахтом или железнодорожным вагоном.
+                        Стоимость доставки может быть как включена в стоимость продукции и оплачена Поставщиком, так и быть оплачена Клиентом по выставленному транспортной компанией счету.</p>
+            </section>
+
+            <aside class="order-section">
+                <a href="order.html" class="order-button">Сделать онлайн-заказ</a>
+            </aside>
+    </main>
+    </footer>
+
+        <div class="container footer-container">
+            <p>&copy; TEK-SYSTEMS 2025</p>
+        </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1e363cf6-76ee-445f-bbc9-2a30dac5b833&lang=ru_RU" type="text/javascript"></script>
+
+    </body>
+</html>
