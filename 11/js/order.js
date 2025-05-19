@@ -61,5 +61,5 @@ orderForm.addEventListener('submit', function(event) {
 });
 
 cancelButton.addEventListener('click', function() {
-    window.location.href = '1.html'; // перенаправление на 1.html
+    window.location.href = 'index.html'; // перенаправление на index.html
 });
