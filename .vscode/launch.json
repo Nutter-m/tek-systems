@@ -7,8 +7,8 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "Open 1.html",
-            "file": "c:\\Users\\Пользователь\\Desktop\\diplom\\11\\1.html"
+            "name": "Open index.html",
+            "file": "c:\\Users\\Пользователь\\Desktop\\diplom\\11\\index.html"
         }
     ]
 }
