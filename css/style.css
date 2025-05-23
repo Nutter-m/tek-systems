@@ -18,13 +18,15 @@ body {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2px;
+    padding: 1px; 
 }
+
 
 /*изменение цвета ТЭК-СИСТЕМС при наведении и при нажатии, при котором происходит обновление страницы*/
 h1 a {
     color: inherit;
     text-decoration: none;
+    
 }
 
 h1 a:hover {
